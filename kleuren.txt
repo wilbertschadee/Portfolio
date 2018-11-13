@@ -1,3 +1,10 @@
 #fff5ee = schelp wit
 #f8f8ff = geest wit
 #ffefc1 = rozeachtig
+
+lettertype = roboto
+
+kopjes:
+    about me
+    ?????????
+    social
