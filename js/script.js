@@ -7,9 +7,17 @@ function myFunction() {
 
 
   
-  var scaledValue = [scaleValue(scrolled, 3, 8, 1, 0), scaleValue(scrolled, 23, 40, 0, 1), scaleValue(scrolled, 43, 50, 1, 0), scaleValue(scrolled, 69, 79, 0, 1), scaleValue(scrolled, 82, 93, 1, 0)];
+  var scaledValue = [scaleValue(scrolled, 3, 8, 1, 0), 
+    scaleValue(scrolled, 23, 40, 0, 1), 
+    scaleValue(scrolled, 43, 50, 1, 0), 
+    scaleValue(scrolled, 69, 79, 0, 1), 
+    scaleValue(scrolled, 82, 93, 1, 0)
+  ];
 
-  var foto = [document.getElementById("header"), document.getElementById("img2"), document.getElementById("img3")];
+  var foto = [document.getElementById("header"), 
+    document.getElementById("img-1"), 
+    document.getElementById("img-2")
+  ];
 
   if (scrolled < 20) {
     foto[0].style.opacity = scaledValue[0];

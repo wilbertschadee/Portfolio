@@ -59,22 +59,22 @@ body {
   grid-template-rows: 100px 250px 50px 250px 400px;
   background-position: bottom;
 }
-.headertekst{
+.header_tekst{
   grid-column: 2/5;
   grid-row: 4/5;
   color: rgba(255, 255, 255, 0.877);
   font-size: 50px;
-  background-image: url(img/headertekst.png);
+  background-image: url(../img/headertekst.png);
   background-size: cover;
   background-position: center;
   text-align: center;
 }
 
 
-.headerimg {
+.header_img {
   grid-column: 3/4;
   grid-row: 2/3;
-  background-image: url(img/headerimg.jpg);
+  background-image: url(../img/headerimg.jpg);
   background-size: 200%;
   background-position: center;
 
@@ -97,7 +97,7 @@ body {
   grid-row: 1/2;
   text-align: center;
 }
-.tekst1 {
+.tekst{
   grid-column: 2/3;
   grid-row: 2/4;
   border-radius: 10px;
@@ -109,4 +109,15 @@ body {
   grid-column: 3/4;
   grid-row: 2/4;
   border-radius: 10px;
+  background-image: url(img/img1.jpg)
+}
+
+#img-1{
+  min-height: 2000px; 
+  background-image: url(../img/parallax2.jpg)
+}
+
+#img-2{
+  min-height: 2000px; 
+  background-image: url(../img/parallax3.jpg)
 }
