@@ -5,9 +5,11 @@ scroll-behavior: smooth;
 body {
   margin: 0;
   font-family: "Roboto";
-  font-size: 25px;
-  background-color: #fff5ee;
+  font-size: 22px;
+  background-color: #fffafa;
 }
+
+
 
 /* .progress-bar {
   position: fixed;
@@ -84,22 +86,27 @@ body {
 
 .kopje {
   display: grid;
-  grid-template-columns: 10% 1fr  10%;
-  grid-template-rows: 20px 500px 20px;
-  background-color: #fff5ee;
+  grid-template-columns: 10% 1fr 300px 10%;
+  grid-template-rows: 120px 250px 150px 20px;
+  background-color: #fffafa;
 }
 
-.tekst1 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  border-radius: 10px;
-  padding: 10px;
+.hoofdstuk{
+  border-bottom: 5px solid #fff5ee;
+  grid-column: 2/4;
+  grid-row: 1/2;
   text-align: center;
 }
-
-/* .img1 {
-  grid-column: 4/5;
-  grid-row: 2/3;
-  background-color: rgba(141, 66, 66, 0.5);
+.tekst1 {
+  grid-column: 2/3;
+  grid-row: 2/4;
   border-radius: 10px;
-} */
+  padding: 10px;
+}
+
+.img{
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 2/4;
+  border-radius: 10px;
+}
