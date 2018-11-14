@@ -1,6 +1,7 @@
 #fff5ee = schelp wit
 #f8f8ff = geest wit
 #ffefc1 = rozeachtig
+#3b83bd = lichtblauw
 
 lettertype = roboto
 
