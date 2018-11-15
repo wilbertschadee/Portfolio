@@ -17,7 +17,7 @@ if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
 
 	window.onblur = function () {
 
-		titleInterval = setInterval(changeTitel, 10000);
+		titleInterval = setInterval(changeTitel, 5000);
 		console.log("titleInterval enabled");
 
 		function changeTitel() {
