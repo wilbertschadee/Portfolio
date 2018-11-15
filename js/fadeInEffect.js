@@ -17,7 +17,7 @@ function myFunction() {
 
   if (scrolled < 20) {
     foto[0].style.opacity = scaledValue[0];
-  } else if (scrolled > 80) {
+  } else if (scrolled > 75) {
     foto[1].style.opacity = scaledValue[1];
   }
 

@@ -62,16 +62,17 @@ body {
   text-align: center;
   justify-content: center;
   text-decoration: none;
+  transition: transform 1s;
 }
 
 .header_text:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   font-size: 0px;
 }
 
 .header_text:hover:after {
   content: attr(data-hover);
-  font-size: 60px;
+  font-size: 70px;
   line-height: 225px
 }
 
@@ -184,7 +185,7 @@ body {
 #contact {
   display: grid;
   grid-template-columns: auto 250px 250px 250px 125px 125px auto;
-  grid-template-rows: 20px 50px 250px 50px 50px 10px;
+  grid-template-rows: 20px 50px 250px 125px 50px 10px;
   background-color: #fffaf0;
 }
 
@@ -213,80 +214,39 @@ body {
   grid-column: 2/3;
   grid-row: 1/2;
   background-image: url("../img/socialMedia/facebookLogo.png");
-  background-size: cover
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .socialMediaGitHub {
   grid-column: 4/5;
   grid-row: 1/2;
   background-image: url("../img/socialMedia/gitHubLogo.png");
-  background-size: cover
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .socialMediaLinkedin {
   grid-column: 6/6;
   grid-row: 1/2;
   background-image: url("../img/socialMedia/linkedinLogo.png");
-  background-size: cover
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .socialMediaFacebook:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  text-shadow: 1px 1px grey;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 
 .socialMediaGitHub:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  text-shadow: 1px 1px grey;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 
 .socialMediaLinkedin:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
-
-/* .tekst{
-  grid-column: 2/4;
-  grid-row: 2/4;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-}  */
-/* .img{
-  background-size: cover;
-  grid-column: 3/4;
-  grid-row: 2/4;
-  border-radius: 10px;
-  background-image: url(../img/img1.jpg)
-} */
-
-/* #img-1{
-  min-height: 500px; 
-  background-image: url(../img/parallax2.jpg)
-}
-
-#img-2{
-  min-height: 500px; 
-  background-image: url(../img/parallax3.jpg)
-}
-#img-3{
-  min-height: 500px; 
-  background-image: url(../img/parallax3.jpg)
-}
-
-#img-4{
-  min-height: 500px; 
-  background-image: url(../img/parallax3.jpg)
-}
-
-#img-5{
-  min-height: 500px; 
-  background-image: url(../img/parallax3.jpg)
-}
-
-#img-6{
-  min-height: 500px; 
-  background-image: url(../img/parallax3.jpg)
-}
-
-#img-7{
-  min-height: 500px; 
-  background-image: url(../img/parallax3.jpg)
-} */
