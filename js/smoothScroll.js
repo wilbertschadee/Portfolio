@@ -8,7 +8,7 @@ $(document).ready(function(){
       var hash = this.hash;
 
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 50
+        scrollTop: $(hash).offset().top - 175
       }, 800, function(){
    
       });
