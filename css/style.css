@@ -1,15 +1,9 @@
-html{
-scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: "Montserrat";
   font-size: 22px;
   background-color: #fffaf0;
 }
-
-
 
 /* .progress-bar {
   position: fixed;
@@ -21,7 +15,7 @@ body {
   z-index: 1;
 } */
 
-.nav-bar {
+.navBar {
   overflow: hidden;
   background-color: rgba(51, 51, 51, 0.5);
   text-align: center;
@@ -31,7 +25,7 @@ body {
   z-index: 1;
 }
 
-.nav-bar a {
+.navBar a {
   font-size: 22px;
   float: none;
   display: inline-block;
@@ -44,13 +38,11 @@ body {
 }
 
 .parallax {
-  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 #header {
   display: grid;
@@ -58,7 +50,7 @@ body {
   grid-template-rows: 100px 250px 50px 250px 400px;
   background-position: bottom;
 }
-.header_tekst{
+.header_text{
   grid-column: 2/5;
   grid-row: 4/5;
   color: rgba(255, 255, 255, 0.877);
@@ -67,12 +59,20 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.header_tekst:hover{
-  content: "click here"
+.header_text:hover{
+  transform: scale(1.2);
+  font-size: 0px;
 }
 
+.header_text:hover:after{
+  content: attr(data-hover);
+  font-size: 60px;
+  line-height: 225px
+}
 
 .header_img {
   grid-column: 3/4;
@@ -102,7 +102,6 @@ body {
   grid-row: 1/2;
   text-align: center;
 }
-
 
 .text-1{
   grid-column: 4/7;
@@ -179,20 +178,58 @@ body {
   padding: 5%;
 }
 
-
-#contact {
+#contact{
   display: grid;
-  grid-template-columns: 20px 1fr 100px 20px;
-  grid-template-rows: 20px 300px 20px;
+  grid-template-columns: 100px 1fr 50px 100px;
+  grid-template-rows: 20px 70px 160px 70px 20px;
   background-color: #fffaf0;
 }
 
-.gegevens{
+.contactData{
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 2/5;
 }
 
+.socialMedia{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-rows: 50px 5px 50px 5px 50px
+}
 
+.socialMediaFacebook{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url("../img/socialMedia/facebookLogo.png");
+  background-size: cover
+}
+
+.socialMediaGitHub{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-image: url("../img/socialMedia/gitHubLogo.png");
+  background-size: cover
+}
+
+.socialMediaLinkedin{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  background-image: url("../img/socialMedia/linkedinLogo.png");
+  background-size: cover
+}
+
+.socialMediaFacebook:hover{
+  transform: scale(1.2);
+}
+
+.socialMediaGitHub:hover{
+  transform: scale(1.2);
+}
+
+.socialMediaLinkedin:hover{
+  transform: scale(1.2);
+}
 /* .tekst{
   grid-column: 2/4;
   grid-row: 2/4;
