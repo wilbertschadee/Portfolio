@@ -9,19 +9,19 @@ if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
 	}
 
 } else {
-	var index = 0;
-
-	var titles = ["Where did you go?", "Pleas come back", "don't leave me", "Aaah, Come on", "Oke then :("];
+	
+	var titles = ["Where did you go?", "Please come back", "Don't leave me", "Aaah, Come on", "Oke then :("];
 
 	var titleInterval;
 
 	window.onblur = function () {
 
-		titleInterval = setInterval(changeTitel, 5000);
-		console.log("titleInterval enabled");
+		titleInterval = setInterval(changeTitel, 1000);
 
+		var index = 0;
+		
 		function changeTitel() {
-			console.log("changing title to: " + index);
+
 			document.title = titles[index];
 			index++;
 
