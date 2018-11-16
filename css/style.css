@@ -103,6 +103,7 @@ body {
   grid-column: 1/9;
   grid-row: 1/2;
   text-align: center;
+
 }
 
 .text-1 {
@@ -190,7 +191,7 @@ body {
 }
 
 .contactHeader{
-  grid-column: 2/7;
+  grid-column: 1/8;
   grid-row: 1/2;
   text-align: center;
   border-bottom: 5px solid #3b83bd;
