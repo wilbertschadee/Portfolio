@@ -98,7 +98,7 @@ body {
   background-image: url("../img/woodenTableBg.jpg");
 }
 
-.hoofdstuk {
+#aboutMe {
   border-bottom: 5px solid #3b83bd;
   grid-column: 1/9;
   grid-row: 1/2;
@@ -185,7 +185,7 @@ body {
 #contact {
   display: grid;
   grid-template-columns: auto 250px 250px 250px 125px 125px auto;
-  grid-template-rows: 120px 20px 250px 50px 50px 10px;
+  grid-template-rows: 120px 20px 250px 50px 50px 20px;
   background-color: #fffaf0;
 }
 
