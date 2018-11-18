@@ -46,8 +46,8 @@ body {
 
 #header {
   display: grid;
-  grid-template-columns: auto 275px 250px 275px auto;
-  grid-template-rows: 100px 250px 50px 250px 400px;
+  grid-template-columns: 1fr 1fr 250px 1fr 1fr;
+  grid-template-rows: 1fr 250px 0.5fr 2.5fr 4fr;
   background-position: bottom;
 }
 
@@ -57,7 +57,8 @@ body {
   color: rgba(255, 255, 255, 0.877);
   font-size: 50px;
   background-image: url(../img/headertekst.png);
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   justify-content: center;
@@ -93,7 +94,7 @@ body {
   font-family: "Just Another Hand";
   font-size: 40px;
   display: grid;
-  grid-template-columns: auto 150px 150px 150px 150px 150px 150px 150px auto;
+  grid-template-columns: auto repeat(7, 150px) auto;
   grid-template-rows: 120px 400px 500px 200px 500px 200px 500px 200px 500px 200px 500px 200px 500px 200px 500px 600px;
   background-image: url("../img/woodenTableBg.jpg");
 }
@@ -103,7 +104,6 @@ body {
   grid-column: 1/9;
   grid-row: 1/2;
   text-align: center;
-
 }
 
 .text-1 {
@@ -257,4 +257,8 @@ body {
 .socialMediaLinkedin:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+@media(max-width: 700px){
+  
 }
